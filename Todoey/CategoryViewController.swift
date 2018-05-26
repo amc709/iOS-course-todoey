@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import SwipeCellKit
 
 class CategoryViewController: UITableViewController {
     
@@ -22,7 +23,7 @@ class CategoryViewController: UITableViewController {
         
         let dataFilePath = FileManager.default.urls(for: .documentDirectory
                     , in: .userDomainMask).first?.appendingPathComponent("TodoeyItems.plist")
-        print("Data file path:  \(dataFilePath)")
+        print("Data file path:  \(dataFilePath!)")
 
         loadCategories()
     }

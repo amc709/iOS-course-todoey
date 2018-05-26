@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+//import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        // Do this to verify that the TodoListArray was actually
 //        // updated with the added todo item
 //        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last as String!)
+        
+        
+        // To get location of Realm file; you can use Realm Browser app to view the realm file data
+//        print(Realm.Configuration.defaultConfiguration.fileUrl)
+        
         
         return true
     }
