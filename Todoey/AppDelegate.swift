@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-//import RealmSwift
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,10 +24,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        // updated with the added todo item
 //        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last as String!)
         
-        
+        // ********** USING REALM ***********
         // To get location of Realm file; you can use Realm Browser app to view the realm file data
-//        print(Realm.Configuration.defaultConfiguration.fileUrl)
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
         
+        // Instantiate Realm connection
+//        do {
+//        let realm = try Realm()
+//        } catch {
+//            print("Error initializing Realm:  \(error)")
+//        }
         
         return true
     }
